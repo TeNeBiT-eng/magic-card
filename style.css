@@ -7,6 +7,7 @@
 * {
   --card-height: 65vh;
   --card-width: calc(var(--card-height) / 1.5);
+  font-size: 16px;
 }
 
 body {
@@ -113,9 +114,10 @@ img{
 
 .linkedIn {
   color: snow;
-  font-size: larger;
+  font-size: 2rem;
   text-decoration: none;
   font-family: sans-serif;
   font-weight: 500;
   margin-top: 2rem;
+  text-shadow: 2px 2px 5px #5ddcff
 }
