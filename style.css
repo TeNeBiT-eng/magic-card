@@ -39,7 +39,7 @@ body {
 
 .card:hover {
   color: rgb(88 199 250 / 100%);
-  transition: color 1s;
+  transition: color 1s ease;
 }
 .card:hover:before,
 .card:hover:after {
@@ -84,7 +84,7 @@ body {
     #4e00c2
   );
   opacity: 1;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s ease-in-out;
   animation: spin 2.5s linear infinite;
 }
 
@@ -100,18 +100,22 @@ body {
 .card img {
   width: 100%;
 }
-.card img {
-  opacity: 1;
+img{
+    opacity: 0;
+    transition: .5s ease;
 }
-
+.card:hover img{
+    opacity: 1;
+}
 .gitImg{
     width: 50%;
 }
 
 .linkedIn {
-  color: #212534;
+  color: snow;
+  font-size: larger;
   text-decoration: none;
   font-family: sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 2rem;
 }
