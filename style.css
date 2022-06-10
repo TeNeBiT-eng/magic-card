@@ -4,7 +4,7 @@
     inherits: false;
   }
   
-  :root {
+  * {
     --card-height: 65vh;
     --card-width: calc(var(--card-height) / 1.5);
   }
@@ -36,7 +36,7 @@
     font-size: 1.5em;
     color: rgb(88 199 250 / 0%);
     cursor: pointer;
-    font-family: 'Clicker Script', cursive;
+    font-family: 'Poppins', sans-serif;
   }
   
   .card:hover {
@@ -55,13 +55,13 @@
     height: 102%;
     border-radius: 8px;
     background-image: linear-gradient(
-      var(--rotate)
-      , #5ddcff, #3c67e3 43%, #4e00c2);
-      position: absolute;
-      z-index: -1;
-      top: -1%;
-      left: -2%;
-      animation: spin 2.5s linear infinite;
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
   }
   
   .card::after {
@@ -77,9 +77,9 @@
     transform: scale(0.8);
     filter: blur(calc(var(--card-height) / 6));
     background-image: linear-gradient(
-      var(--rotate)
-      , #5ddcff, #3c67e3 43%, #4e00c2);
-      opacity: 1;
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
     transition: opacity .5s;
     animation: spin 2.5s linear infinite;
   }
@@ -96,8 +96,12 @@
   .card img{
     width: 40%;
   }
+  .card img{
+    opacity: 1;
+  }
+  
 
-  a {
+    .linkedIn {
     color: #212534;
     text-decoration: none;
     font-family: sans-serif;
